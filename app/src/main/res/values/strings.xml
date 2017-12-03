@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Michael Li Android App</string>
+    <string name="edit_message">Black Jack</string>
+    <string name="button_send">Start</string>
+</resources>
