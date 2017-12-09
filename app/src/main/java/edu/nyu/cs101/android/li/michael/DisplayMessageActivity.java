@@ -41,6 +41,7 @@ textView.setText(message);
         TextView dealerView = findViewById(R.id.dealerView);
         TextView resultView = findViewById(R.id.resultView);
         switch (view.getId()) {
+            // player hit
             case R.id.buttonHit:
                 if(!player.isBust() && player.isAskToHit()) {
                     player.action(player.HIT);
@@ -50,11 +51,13 @@ textView.setText(message);
                     getResult(dealerView, resultView);
                 }
                 break;
+            // player stand
             case R.id.buttonStand:
                 player.action(player.STAND);
                 dealer.action();
                 getResult(dealerView, resultView);
                 break;
+            // new game
             default:
                 player.reset();
                 dealer.reset();
